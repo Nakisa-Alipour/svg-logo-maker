@@ -7,7 +7,7 @@ describe('SVG', () => {
   });
 
   it('render method should contain the provided text', () => {
-    expect(svg.render()).toContain('test');
+    expect(svg.render()).toContain('My Logo');
   });
   
   it('render method should contain the provided shape', () => {
