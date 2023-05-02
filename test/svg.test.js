@@ -1,5 +1,5 @@
 // Import the SVG class from the SVG module
-import SVG from './lib/svg.js';
+import SVG from '../lib/svg.js';
 
 // Create a new instance of SVG with some properties
 const svg = new SVG('My Logo', 'circle', '#000000', '#FFFFFF');

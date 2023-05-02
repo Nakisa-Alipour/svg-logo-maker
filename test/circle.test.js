@@ -1,5 +1,5 @@
 // Import the Circle class
-const Circle = require('./circle');
+const Circle = require('../lib/circle.js');
 
 // Define a describe block for the Circle class
 describe('Circle', () => {
