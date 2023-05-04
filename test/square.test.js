@@ -12,7 +12,7 @@ describe('Square', () => {
 
       // Expect the Square object to have the correct properties
       expect(square.text).toBe('My logo');
-      expect(square.shape).toBe('square');
+      expect(square.shape).toBe('rect');
       expect(square.textColor).toBe('#FFFFFF');
       expect(square.shapeColor).toBe('#000000');
     });
