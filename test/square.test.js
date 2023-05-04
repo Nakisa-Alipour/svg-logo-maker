@@ -1,5 +1,5 @@
 // Import the Square class
-const Square = require('../lib/square.js');
+import { Square } from '../lib/square.js';
 
 // Define a describe block for the Square class
 describe('Square', () => {

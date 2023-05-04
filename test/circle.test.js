@@ -1,5 +1,5 @@
 // Import the Circle class
-const Circle = require('../lib/circle.js');
+import { Circle } from '../lib/circle.js';
 
 // Define a describe block for the Circle class
 describe('Circle', () => {
@@ -7,7 +7,7 @@ describe('Circle', () => {
   describe('constructor', () => {
     // Define a test case for creating a new Circle object
     it('should create a new Circle object', () => {
-      // Create a new Circle object
+      // Create a new Circle object     
       const circle = new Circle('My logo', '#FFFFFF', '#000000');
 
       // Expect the Circle object to have the correct properties

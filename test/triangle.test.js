@@ -1,4 +1,4 @@
-const Triangle = require('../lib/triangle.js');
+import { Triangle } from '../lib/triangle.js';
 const { expect } = require('chai');
 
 describe('Triangle', () => {
