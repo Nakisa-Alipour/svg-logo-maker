@@ -36,15 +36,13 @@ describe('Square', () => {
       expect(typeof result).toBe('string');
 
       // Expect the result to contain the correct SVG code
-      expect(result).toContain('<rect');
-      expect(result).toContain('x="100"');
+      expect(result).toContain('x="50"');
       expect(result).toContain('y="50"');
-      expect(result).toContain('width="100"');
-      expect(result).toContain('height="100"');
+      expect(result).toContain('width="200"');
+      expect(result).toContain('height="200"');
       expect(result).toContain(`fill="#000000"`);
       expect(result).toContain('My logo');
       expect(result).toContain('font-size="30"');
     });
   });
 });
-

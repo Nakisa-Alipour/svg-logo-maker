@@ -2,6 +2,9 @@
 
 This is a Node.js command-line application that generates a simple logo as an SVG file. The user is prompted to enter text, select a color and shape, and save the generated SVG file. The logo is designed to help freelance web developers generate simple logos for their projects without having to pay a graphic designer.
 
+## Walkthrough Video
+[![Alt Text](https://cdn.loom.com/sessions/thumbnails/670a91564fc14a75ba043113c6b658fa-with-play.gif)](https://www.loom.com/embed/670a91564fc14a75ba043113c6b658fa)
+
 ## User Story
 AS a freelance web developer
 I WANT to generate a simple logo for my projects
@@ -28,7 +31,3 @@ When the logo.svg file is opened in a browser, the user is shown a 300x200 pixel
 
 ## Testing
 This application uses Jest for running unit tests. To run the tests, simply run npm test in the terminal.
-
-## Walkthrough Video
-To see the functionality of this application in action, please check out the following link:
-

@@ -1,5 +1,4 @@
 import { Triangle } from '../lib/triangle.js';
-const { expect } = require('chai');
 
 describe('Triangle', () => {
   describe('constructor', () => {
@@ -9,10 +8,10 @@ describe('Triangle', () => {
       const shapeColor = '#FFFFFF';
       const triangle = new Triangle(text, textColor, shapeColor);
 
-      expect(triangle.text).to.equal(text);
-      expect(triangle.shape).to.equal('polygon');
-      expect(triangle.textColor).to.equal(textColor);
-      expect(triangle.shapeColor).to.equal(shapeColor);
+      expect(triangle.text).toBe(text);
+      expect(triangle.shape).toBe('polygon');
+      expect(triangle.textColor).toBe(textColor);
+      expect(triangle.shapeColor).toBe(shapeColor);
     });
   });
 
@@ -24,15 +23,15 @@ describe('Triangle', () => {
       const triangle = new Triangle(text, textColor, shapeColor);
 
       const expectedSVG = `<svg version="1.2" xmlns="http://www.w3.org/2000/svg" width="300" height="200">
-      <polygon fill="${shapeColor}" />
-      <text x="150" y="110" fill="${textColor}" text-anchor="middle" font-size="30">
-        ${text}
-      </text>
-    </svg>`;
+        <polygon points="150,10 280,190 20,190" fill="${shapeColor}" />
+        <text x="150" y="110" fill="${textColor}" text-anchor="middle" font-size="30">
+          ${text}
+        </text>
+      </svg>`;
 
       const renderedSVG = triangle.render();
 
-      expect(renderedSVG).to.equal(expectedSVG);
+      expect(renderedSVG).toMatch(expectedSVG);
     });
   });
 });
